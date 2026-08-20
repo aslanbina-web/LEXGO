@@ -3,22 +3,22 @@ import { ArrowRight, BatteryCharging, Cable, Check, ChevronRight, Globe2, Langua
 
 const SHOPEE_URL = 'https://shopee.tw/shop/1695089765';
 type Lang = 'zh' | 'en';
-type Product = { id:string; category:string; zh:string; en:string; detailZh:string; detailEn:string; statusZh:string; statusEn:string; icon:any; accent:string };
+type Product = { id:string; category:string; zh:string; en:string; detailZh:string; detailEn:string; statusZh:string; statusEn:string; icon:any; accent:string; image?:string };
 
 const products: Product[] = [
-  {id:'sim',category:'connect',zh:'LEXGO 國際上網卡',en:'LEXGO Travel SIM',detailZh:'實體 SIM 卡・多國網路方案・方案詳情請見蝦皮',detailEn:'Physical SIM · Multi-country plans · Details on Shopee',statusZh:'蝦皮販售中',statusEn:'Available on Shopee',icon:Smartphone,accent:'cyan'},
+  {id:'sim',category:'connect',zh:'LEXGO 國際上網卡',en:'LEXGO Travel SIM',detailZh:'實體 SIM 卡・多國網路方案・方案詳情請見蝦皮',detailEn:'Physical SIM · Multi-country plans · Details on Shopee',statusZh:'蝦皮販售中',statusEn:'Available on Shopee',icon:Smartphone,accent:'cyan',image:'/products/lexgo-sim.webp'},
   {id:'esim',category:'connect',zh:'LEXGO eSIM',en:'LEXGO eSIM',detailZh:'數位開通・免換卡・方案詳情請見蝦皮',detailEn:'Digital delivery · No card swap · Details on Shopee',statusZh:'蝦皮販售中',statusEn:'Available on Shopee',icon:Globe2,accent:'blue'},
   {id:'network-card',category:'connect',zh:'LEXGO 網路卡',en:'LEXGO Network Card',detailZh:'穩定連線的網路介面方案',detailEn:'Reliable network interface solution',statusZh:'已向供應商訂購',statusEn:'Supplier order placed',icon:Network,accent:'cyan'},
-  {id:'sharing',category:'network',zh:'LEXGO 網路分享裝置',en:'LEXGO Mobile Hotspot',detailZh:'行動網路分享・多人同時連線・詳細規格請見蝦皮',detailEn:'Portable sharing · Multi-device access · Details on Shopee',statusZh:'蝦皮販售中',statusEn:'Available on Shopee',icon:Router,accent:'orange'},
+  {id:'sharing',category:'network',zh:'LEXGO 網路分享裝置',en:'LEXGO Mobile Hotspot',detailZh:'行動網路分享・多人同時連線・詳細規格請見蝦皮',detailEn:'Portable sharing · Multi-device access · Details on Shopee',statusZh:'蝦皮販售中',statusEn:'Available on Shopee',icon:Router,accent:'orange',image:'/products/lexgo-router.webp'},
   {id:'internet',category:'network',zh:'LEXGO 網際網路設備',en:'LEXGO Internet Equipment',detailZh:'家庭與行動網路設備',detailEn:'Home and mobile internet equipment',statusZh:'已向供應商訂購',statusEn:'Supplier order placed',icon:Router,accent:'blue'},
   {id:'communication',category:'network',zh:'LEXGO 網路通訊設備',en:'LEXGO Network Communication',detailZh:'可靠、簡潔的通訊硬體',detailEn:'Reliable, simple communication hardware',statusZh:'已向供應商訂購',statusEn:'Supplier order placed',icon:Network,accent:'cyan'},
-  {id:'charger',category:'power',zh:'LEXGO 快速充電器',en:'LEXGO Fast Charger',detailZh:'日常與旅行使用的快速充電方案・詳細規格請見蝦皮',detailEn:'Fast charging for daily life and travel · Details on Shopee',statusZh:'蝦皮販售中',statusEn:'Available on Shopee',icon:Zap,accent:'orange'},
-  {id:'phone-charger',category:'power',zh:'LEXGO 手機充電器',en:'LEXGO Mobile Charger',detailZh:'輕巧、安全、隨時補充電力・詳細規格請見蝦皮',detailEn:'Compact, safe mobile charging · Details on Shopee',statusZh:'蝦皮販售中',statusEn:'Available on Shopee',icon:BatteryCharging,accent:'blue'},
+  {id:'charger',category:'power',zh:'LEXGO 快速充電器',en:'LEXGO Fast Charger',detailZh:'日常與旅行使用的快速充電方案・詳細規格請見蝦皮',detailEn:'Fast charging for daily life and travel · Details on Shopee',statusZh:'蝦皮販售中',statusEn:'Available on Shopee',icon:Zap,accent:'orange',image:'/products/lexgo-charger-cable.webp'},
+  {id:'phone-charger',category:'power',zh:'LEXGO 手機充電器',en:'LEXGO Mobile Charger',detailZh:'輕巧、安全、隨時補充電力・詳細規格請見蝦皮',detailEn:'Compact, safe mobile charging · Details on Shopee',statusZh:'蝦皮販售中',statusEn:'Available on Shopee',icon:BatteryCharging,accent:'blue',image:'/products/lexgo-charger-cable.webp'},
   {id:'power-bank',category:'power',zh:'LEXGO 行動電源',en:'LEXGO Power Bank',detailZh:'行動生活的隨身電力',detailEn:'Portable power for life on the move',statusZh:'已向供應商訂購',statusEn:'Supplier order placed',icon:BatteryCharging,accent:'cyan'},
-  {id:'cable',category:'power',zh:'LEXGO 充電線',en:'LEXGO Charging Cable',detailZh:'耐用、簡潔的充電與傳輸配件・詳細規格請見蝦皮',detailEn:'Durable charging and data accessory · Details on Shopee',statusZh:'蝦皮販售中',statusEn:'Available on Shopee',icon:Cable,accent:'orange'},
+  {id:'cable',category:'power',zh:'LEXGO 充電線',en:'LEXGO Charging Cable',detailZh:'耐用、簡潔的充電與傳輸配件・詳細規格請見蝦皮',detailEn:'Durable charging and data accessory · Details on Shopee',statusZh:'蝦皮販售中',statusEn:'Available on Shopee',icon:Cable,accent:'orange',image:'/products/lexgo-charger-cable.webp'},
   {id:'scale',category:'measure',zh:'LEXGO 智慧電子秤',en:'LEXGO Digital Scale',detailZh:'清楚顯示・日常精準量測',detailEn:'Clear display · Everyday precision',statusZh:'已向供應商訂購',statusEn:'Supplier order placed',icon:Scale,accent:'blue'},
   {id:'spring-scale',category:'measure',zh:'LEXGO 自動指示彈簧秤',en:'LEXGO Spring Scale',detailZh:'直覺刻度・快速讀值',detailEn:'Intuitive scale · Quick readings',statusZh:'已向供應商訂購',statusEn:'Supplier order placed',icon:Scale,accent:'cyan'},
-  {id:'case',category:'accessory',zh:'LEXGO 手機殼',en:'LEXGO Phone Case',detailZh:'簡潔保護・日常風格・適用型號請見蝦皮',detailEn:'Simple protection · Models and details on Shopee',statusZh:'蝦皮販售中',statusEn:'Available on Shopee',icon:Smartphone,accent:'orange'},
+  {id:'case',category:'accessory',zh:'LEXGO 手機殼',en:'LEXGO Phone Case',detailZh:'簡潔保護・日常風格・適用型號請見蝦皮',detailEn:'Simple protection · Models and details on Shopee',statusZh:'蝦皮販售中',statusEn:'Available on Shopee',icon:Smartphone,accent:'orange',image:'/products/lexgo-case.webp'},
 ];
 
 const categories = [
@@ -34,7 +34,7 @@ const copy = {
 
 function Logo({light=false}:{light?:boolean}) { return <a href="/" className={`logo ${light?'logo-light':''}`} aria-label="LEXGO home"><span>LEX</span><svg viewBox="0 0 84 42" aria-hidden="true"><path d="M4 21C14 2 31 2 42 21S70 40 80 21"/><path d="M4 21C14 40 31 40 42 21S70 2 80 21"/></svg></a> }
 
-function ProductVisual({p}:{p:Product}) { const Icon=p.icon; return <div className={`product-visual ${p.accent}`}><div className="product-device"><span className="mini-logo">LEX<span>GO</span></span><Icon size={46}/><small>{p.id.toUpperCase()}</small></div><div className="orbit orbit-a"/><div className="orbit orbit-b"/></div> }
+function ProductVisual({p}:{p:Product}) { const Icon=p.icon; return <div className={`product-visual ${p.accent}`}>{p.image?<img src={p.image} alt="" style={{width:'100%',height:'100%',objectFit:'cover',display:'block'}}/>:<><div className="product-device"><span className="mini-logo">LEX<span>GO</span></span><Icon size={46}/><small>{p.id.toUpperCase()}</small></div><div className="orbit orbit-a"/><div className="orbit orbit-b"/></>}</div> }
 
 export default function App(){
  const [lang,setLang]=useState<Lang>('zh'); const [menu,setMenu]=useState(false); const [filter,setFilter]=useState('all');
@@ -51,4 +51,5 @@ export default function App(){
   <footer><div><Logo light/><p>{t.footer}</p></div><a href={SHOPEE_URL} target="_blank" rel="noreferrer">{t.shop}<ArrowRight size={16}/></a></footer>
  </div>
 }
+
 
