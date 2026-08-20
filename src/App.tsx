@@ -6,19 +6,19 @@ type Lang = 'zh' | 'en';
 type Product = { id:string; category:string; zh:string; en:string; detailZh:string; detailEn:string; statusZh:string; statusEn:string; icon:any; accent:string };
 
 const products: Product[] = [
-  {id:'sim',category:'connect',zh:'LEXGO 國際上網卡',en:'LEXGO Travel SIM',detailZh:'實體 SIM 卡・多國網路方案',detailEn:'Physical SIM · Multi-country plans',statusZh:'上市準備中',statusEn:'Launch preparation',icon:Smartphone,accent:'cyan'},
-  {id:'esim',category:'connect',zh:'LEXGO eSIM',en:'LEXGO eSIM',detailZh:'數位開通・免換卡・即時連線',detailEn:'Digital delivery · Instant connection',statusZh:'蝦皮選購',statusEn:'Shop on Shopee',icon:Globe2,accent:'blue'},
-  {id:'network-card',category:'connect',zh:'LEXGO 網路卡',en:'LEXGO Network Card',detailZh:'穩定連線的網路介面方案',detailEn:'Reliable network interface solution',statusZh:'產品準備中',statusEn:'In preparation',icon:Network,accent:'cyan'},
-  {id:'sharing',category:'network',zh:'LEXGO 網路分享裝置',en:'LEXGO Mobile Hotspot',detailZh:'行動網路分享・多人同時連線',detailEn:'Portable sharing · Multi-device access',statusZh:'產品準備中',statusEn:'In preparation',icon:Router,accent:'orange'},
-  {id:'internet',category:'network',zh:'LEXGO 網際網路設備',en:'LEXGO Internet Equipment',detailZh:'家庭與行動網路設備',detailEn:'Home and mobile internet equipment',statusZh:'產品準備中',statusEn:'In preparation',icon:Router,accent:'blue'},
-  {id:'communication',category:'network',zh:'LEXGO 網路通訊設備',en:'LEXGO Network Communication',detailZh:'可靠、簡潔的通訊硬體',detailEn:'Reliable, simple communication hardware',statusZh:'產品準備中',statusEn:'In preparation',icon:Network,accent:'cyan'},
-  {id:'charger',category:'power',zh:'LEXGO 快速充電器',en:'LEXGO Fast Charger',detailZh:'日常與旅行使用的快速充電方案',detailEn:'Fast charging for daily life and travel',statusZh:'上市準備中',statusEn:'Launch preparation',icon:Zap,accent:'orange'},
-  {id:'phone-charger',category:'power',zh:'LEXGO 手機充電器',en:'LEXGO Mobile Charger',detailZh:'輕巧、安全、隨時補充電力',detailEn:'Compact, safe mobile charging',statusZh:'產品準備中',statusEn:'In preparation',icon:BatteryCharging,accent:'blue'},
-  {id:'power-bank',category:'power',zh:'LEXGO 行動電源',en:'LEXGO Power Bank',detailZh:'行動生活的隨身電力',detailEn:'Portable power for life on the move',statusZh:'上市準備中',statusEn:'Launch preparation',icon:BatteryCharging,accent:'cyan'},
-  {id:'cable',category:'power',zh:'LEXGO 充電線',en:'LEXGO Charging Cable',detailZh:'耐用、簡潔的充電與傳輸配件',detailEn:'Durable charging and data accessory',statusZh:'延伸產品',statusEn:'Extended range',icon:Cable,accent:'orange'},
-  {id:'scale',category:'measure',zh:'LEXGO 智慧電子秤',en:'LEXGO Digital Scale',detailZh:'清楚顯示・日常精準量測',detailEn:'Clear display · Everyday precision',statusZh:'產品準備中',statusEn:'In preparation',icon:Scale,accent:'blue'},
-  {id:'spring-scale',category:'measure',zh:'LEXGO 自動指示彈簧秤',en:'LEXGO Spring Scale',detailZh:'直覺刻度・快速讀值',detailEn:'Intuitive scale · Quick readings',statusZh:'產品準備中',statusEn:'In preparation',icon:Scale,accent:'cyan'},
-  {id:'case',category:'accessory',zh:'LEXGO 手機殼',en:'LEXGO Phone Case',detailZh:'簡潔保護・日常風格',detailEn:'Simple protection · Everyday style',statusZh:'延伸產品',statusEn:'Extended range',icon:Smartphone,accent:'orange'},
+  {id:'sim',category:'connect',zh:'LEXGO 國際上網卡',en:'LEXGO Travel SIM',detailZh:'實體 SIM 卡・多國網路方案・方案詳情請見蝦皮',detailEn:'Physical SIM · Multi-country plans · Details on Shopee',statusZh:'蝦皮販售中',statusEn:'Available on Shopee',icon:Smartphone,accent:'cyan'},
+  {id:'esim',category:'connect',zh:'LEXGO eSIM',en:'LEXGO eSIM',detailZh:'數位開通・免換卡・方案詳情請見蝦皮',detailEn:'Digital delivery · No card swap · Details on Shopee',statusZh:'蝦皮販售中',statusEn:'Available on Shopee',icon:Globe2,accent:'blue'},
+  {id:'network-card',category:'connect',zh:'LEXGO 網路卡',en:'LEXGO Network Card',detailZh:'穩定連線的網路介面方案',detailEn:'Reliable network interface solution',statusZh:'已向供應商訂購',statusEn:'Supplier order placed',icon:Network,accent:'cyan'},
+  {id:'sharing',category:'network',zh:'LEXGO 網路分享裝置',en:'LEXGO Mobile Hotspot',detailZh:'行動網路分享・多人同時連線・詳細規格請見蝦皮',detailEn:'Portable sharing · Multi-device access · Details on Shopee',statusZh:'蝦皮販售中',statusEn:'Available on Shopee',icon:Router,accent:'orange'},
+  {id:'internet',category:'network',zh:'LEXGO 網際網路設備',en:'LEXGO Internet Equipment',detailZh:'家庭與行動網路設備',detailEn:'Home and mobile internet equipment',statusZh:'已向供應商訂購',statusEn:'Supplier order placed',icon:Router,accent:'blue'},
+  {id:'communication',category:'network',zh:'LEXGO 網路通訊設備',en:'LEXGO Network Communication',detailZh:'可靠、簡潔的通訊硬體',detailEn:'Reliable, simple communication hardware',statusZh:'已向供應商訂購',statusEn:'Supplier order placed',icon:Network,accent:'cyan'},
+  {id:'charger',category:'power',zh:'LEXGO 快速充電器',en:'LEXGO Fast Charger',detailZh:'日常與旅行使用的快速充電方案・詳細規格請見蝦皮',detailEn:'Fast charging for daily life and travel · Details on Shopee',statusZh:'蝦皮販售中',statusEn:'Available on Shopee',icon:Zap,accent:'orange'},
+  {id:'phone-charger',category:'power',zh:'LEXGO 手機充電器',en:'LEXGO Mobile Charger',detailZh:'輕巧、安全、隨時補充電力・詳細規格請見蝦皮',detailEn:'Compact, safe mobile charging · Details on Shopee',statusZh:'蝦皮販售中',statusEn:'Available on Shopee',icon:BatteryCharging,accent:'blue'},
+  {id:'power-bank',category:'power',zh:'LEXGO 行動電源',en:'LEXGO Power Bank',detailZh:'行動生活的隨身電力',detailEn:'Portable power for life on the move',statusZh:'已向供應商訂購',statusEn:'Supplier order placed',icon:BatteryCharging,accent:'cyan'},
+  {id:'cable',category:'power',zh:'LEXGO 充電線',en:'LEXGO Charging Cable',detailZh:'耐用、簡潔的充電與傳輸配件・詳細規格請見蝦皮',detailEn:'Durable charging and data accessory · Details on Shopee',statusZh:'蝦皮販售中',statusEn:'Available on Shopee',icon:Cable,accent:'orange'},
+  {id:'scale',category:'measure',zh:'LEXGO 智慧電子秤',en:'LEXGO Digital Scale',detailZh:'清楚顯示・日常精準量測',detailEn:'Clear display · Everyday precision',statusZh:'已向供應商訂購',statusEn:'Supplier order placed',icon:Scale,accent:'blue'},
+  {id:'spring-scale',category:'measure',zh:'LEXGO 自動指示彈簧秤',en:'LEXGO Spring Scale',detailZh:'直覺刻度・快速讀值',detailEn:'Intuitive scale · Quick readings',statusZh:'已向供應商訂購',statusEn:'Supplier order placed',icon:Scale,accent:'cyan'},
+  {id:'case',category:'accessory',zh:'LEXGO 手機殼',en:'LEXGO Phone Case',detailZh:'簡潔保護・日常風格・適用型號請見蝦皮',detailEn:'Simple protection · Models and details on Shopee',statusZh:'蝦皮販售中',statusEn:'Available on Shopee',icon:Smartphone,accent:'orange'},
 ];
 
 const categories = [
@@ -51,3 +51,4 @@ export default function App(){
   <footer><div><Logo light/><p>{t.footer}</p></div><a href={SHOPEE_URL} target="_blank" rel="noreferrer">{t.shop}<ArrowRight size={16}/></a></footer>
  </div>
 }
+
